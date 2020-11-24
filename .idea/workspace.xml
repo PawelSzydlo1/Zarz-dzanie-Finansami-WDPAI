@@ -41,7 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606133842528</updated>
       <workItem from="1606133843680" duration="20977000" />
-      <workItem from="1606227557738" duration="14554000" />
+      <workItem from="1606227557738" duration="15256000" />
     </task>
     <servers />
   </component>
@@ -49,6 +49,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="738" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606244421584">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="322" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606244421584" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1606232175091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
