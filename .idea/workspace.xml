@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="56378d0e-375f-45df-a3f5-94b176f475e5" name="Default Changelist" comment="">
+    <list default="true" id="56378d0e-375f-45df-a3f5-94b176f475e5" name="Default Changelist" comment="zaprojektowanie strony kontaktowej">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style_contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style_contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/uploads/WCMEN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style_your_expanses.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style_your_expanses.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/your_expanses.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/your_expanses.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +68,45 @@
       <updated>1606133842528</updated>
       <workItem from="1606133843680" duration="20977000" />
       <workItem from="1606227557738" duration="17392000" />
-      <workItem from="1606832341329" duration="15175000" />
+      <workItem from="1606832341329" duration="18076000" />
     </task>
+    <task id="LOCAL-00001" summary="zaprojektowanie strony kontaktowej">
+      <created>1606854028286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606854028287</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="zaprojektowanie strony kontaktowej" />
+    <option name="LAST_COMMIT_MESSAGE" value="zaprojektowanie strony kontaktowej" />
   </component>
   <component name="WindowStateProjectService">
     <state x="738" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606244421584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="738" y="322" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606244421584" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606854048847">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606854048847" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1606232175091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
