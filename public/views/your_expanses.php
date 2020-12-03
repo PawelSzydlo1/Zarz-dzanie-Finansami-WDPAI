@@ -39,6 +39,19 @@
             </header>
 
             <section class="projects">
+                <div class="transaction">
+                    <p>Transaction</p>
+                    <div class="list">
+                        <p>katregoria</p>
+                        <p>cena</p>
+                        <p>uwagi:</p>
+
+                    </div>
+                    <div class="summary">
+                        <p>Summary:</p>
+                        <p> -302 zł</p>
+                    </div>
+                </div>
 
                 
             </section>

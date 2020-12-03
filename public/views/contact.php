@@ -37,7 +37,7 @@
         <section class="projects">
             <div class="card_me">
 
-                    <img src="public/img/uploads/photo.jpg">
+                    <img src="public/uploads/photo.jpg">
 
                 <div class="text_contact">
                     Mam na imię Paweł. Z chęcią odpowiem na wszelkie Twoje pytania.
