@@ -20,8 +20,8 @@
                     }
                     ?>
                 </div>
-                <input name="email" type="text" placeholder="email@email.com">
-                <input name="password" type="password" placeholder="password">
+                <input name="email" type="text" placeholder="email@email.com" required>
+                <input name="password" type="password" placeholder="password" required>
                 <button type="submit">LOGIN</button>
             </form>
         </div>

@@ -14,7 +14,7 @@
             <ul>
                 <li>
                     <i class="fas fa-receipt"></i>
-                    <a href="#" class="button">Your expanses</a>
+                    <a href="your_expanses" class="button">Your expanses</a>
                 </li>
                 <li>
                     <i class="fas fa-chart-line"></i>
@@ -22,7 +22,7 @@
                 </li>
                 <li>
                     <i class="fas fa-id-badge"></i>
-                    <a href="#" class="button">Contact</a>
+                    <a href="contact" class="button">Contact</a>
                 </li>
             </ul>
         </nav>

@@ -14,15 +14,15 @@
         <ul>
             <li>
                 <i class="fas fa-project-diagram"></i>
-                <a href="#" class="button">Your expanses</a>
+                <a href="your_expanses" class="button" >Your expanses</a>
             </li>
             <li>
                 <i class="fas fa-project-diagram"></i>
-                <a href="#" class="button">Statistic</a>
+                <a href="#" class="button" >Statistic</a>
             </li>
             <li>
                 <i class="fas fa-project-diagram"></i>
-                <a href="#" class="button">Contact</a>
+                <a href="contact" class="button" >Contact</a>
             </li>
         </ul>
     </nav>

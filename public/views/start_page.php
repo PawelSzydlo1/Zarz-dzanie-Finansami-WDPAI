@@ -13,11 +13,12 @@
             </div>
             <div class="title">INVESTMENT WING</div>
             <div class="buttons">
-                <button>
+                <button onclick="location.href='login'">
                     <i class="fas fa-sign-in-alt"></i>
                     Log in
                 </button>
-                <button>
+
+                <button onclick="location.href='registration'">
                     <i class="fas fa-user-plus"></i>
                     Create an account
                 </button>

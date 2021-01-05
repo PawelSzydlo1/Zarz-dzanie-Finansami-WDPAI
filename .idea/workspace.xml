@@ -19,26 +19,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56378d0e-375f-45df-a3f5-94b176f475e5" name="Default Changelist" comment="Planowanie głównej strony oraz stronki ze statystykami">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/Repository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="56378d0e-375f-45df-a3f5-94b176f475e5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/Routing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/uploads/photo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/start_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/start_page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/your_expanses.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/your_expanses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AppController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style_registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style_registration.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/start_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/start_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/views/your_expanses.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/your_expanses.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +82,9 @@
       <workItem from="1606832341329" duration="18371000" />
       <workItem from="1606901626824" duration="27000" />
       <workItem from="1606935567773" duration="6148000" />
-      <workItem from="1606986949566" duration="18344000" />
+      <workItem from="1606986949566" duration="19826000" />
+      <workItem from="1609781938978" duration="12360000" />
+      <workItem from="1609837841134" duration="14584000" />
     </task>
     <task id="LOCAL-00001" summary="zaprojektowanie strony kontaktowej">
       <created>1606854028286</created>
@@ -111,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606946939013</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- Stworzenie logowania do aplikacji&#10;- Dodanie klasy reprezentującą urzytkownika&#10;- Praca nad widokiem strony yours_expanses">
+      <created>1607024412648</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607024412648</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +136,8 @@
     <MESSAGE value="zaprojektowanie strony kontaktowej" />
     <MESSAGE value="zmiany w wyglądzie głownej strony aplikacji" />
     <MESSAGE value="Planowanie głównej strony oraz stronki ze statystykami" />
-    <option name="LAST_COMMIT_MESSAGE" value="Planowanie głównej strony oraz stronki ze statystykami" />
+    <MESSAGE value="- Stworzenie logowania do aplikacji&#10;- Dodanie klasy reprezentującą urzytkownika&#10;- Praca nad widokiem strony yours_expanses" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Stworzenie logowania do aplikacji&#10;- Dodanie klasy reprezentującą urzytkownika&#10;- Praca nad widokiem strony yours_expanses" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1079" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607016975378">
@@ -156,14 +160,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1276" y="447" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607020406058" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606947016551">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607024434302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606947016551" />
-    <state x="1395" y="208" width="424" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1607023128847">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607024434302" />
+    <state x="1107" y="221" width="493" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1609791252651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1395" y="208" width="424" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607023128847" />
+    <state x="1107" y="221" width="493" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609791252651" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1606232175091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
