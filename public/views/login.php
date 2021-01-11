@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 
 <head>
@@ -11,6 +14,9 @@
             <img src="public/img/logo2.svg">
         </div>
         <div class="login-container">
+            <?php
+            if(empty($_SESSION['user'])):
+            ?>
             <form class="login" action="login" method="POST">
                 <div class="message">
                     <?php if(isset($messages)){
@@ -24,6 +30,13 @@
                 <input name="password" type="password" placeholder="password" required>
                 <button type="submit">LOGIN</button>
             </form>
+
+            <?php
+            else :
+            $url="http://$_SERVER[HTTP_HOST]";
+            header("Location:{$url}/your_expanses");
+            endif;
+            ?>
         </div>
     </div>
 </body>

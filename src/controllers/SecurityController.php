@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once 'AppController.php';
 require_once __DIR__.'/../models/User.php';
 require_once __DIR__.'/../repository/UserRepository.php';
@@ -32,6 +32,9 @@ class SecurityController extends AppController
        if($user->getPassword() !==$password){
            return $this->render('login',['messages'=>['Wrong password!']]);
        }
+
+       $name=$user->getName();
+       $_SESSION['user']=htmlspecialchars($name);
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/your_expanses");

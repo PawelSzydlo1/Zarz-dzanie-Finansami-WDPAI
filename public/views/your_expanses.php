@@ -33,8 +33,8 @@
                     <p class="money"> 159 zł</p>
                 </div>
 
-                <div class="profile">
-                    <i class="fas fa-user-edit"></i> Profile
+                <div class="profile" onclick="location.href='logout'">
+                    <i class="fas fa-sign-out-alt"></i> Log out
                 </div>
             </header>
 
@@ -61,9 +61,10 @@
                 </div>
                 <div class="addExpense">
                     <p>Add expense</p>
-                    <div class="price">
+                    <div class="price" >
                         <p>Price:</p>
-                        <input class="priceArea"></input>
+                        <input class="priceArea"
+                               value="00.00"></input>
                     </div>
                     <div class="category">
                         <p>Category:</p>
@@ -76,7 +77,8 @@
                     </div>
                     <div class="data">
                         <p>Data:</p>
-                        <input class="dataArea"></input>
+                        <input class="dataArea" type="date" name="trip-start"
+                               value="2021-01-01"></input>
                     </div>
                     <div id="add_item">
                         <button>Add</button>
