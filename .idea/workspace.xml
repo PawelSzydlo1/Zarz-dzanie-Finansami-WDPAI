@@ -19,20 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56378d0e-375f-45df-a3f5-94b176f475e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/script.js" afterDir="false" />
+    <list default="true" id="56378d0e-375f-45df-a3f5-94b176f475e5" name="Default Changelist" comment="- Obsługa rejestracji&#10;- walidacja danych">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style_registration.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style_registration.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/views/start_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/start_page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style_your_expanses.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style_your_expanses.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/views/your_expanses.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/views/your_expanses.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/UserRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +75,9 @@
       <workItem from="1606935567773" duration="6148000" />
       <workItem from="1606986949566" duration="19826000" />
       <workItem from="1609781938978" duration="12360000" />
-      <workItem from="1609837841134" duration="14584000" />
+      <workItem from="1609837841134" duration="31699000" />
+      <workItem from="1609934294742" duration="10500000" />
+      <workItem from="1610361401781" duration="325000" />
     </task>
     <task id="LOCAL-00001" summary="zaprojektowanie strony kontaktowej">
       <created>1606854028286</created>
@@ -114,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607024412648</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- Obsługa rejestracji&#10;- walidacja danych">
+      <created>1609858802877</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609858802877</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +137,8 @@
     <MESSAGE value="zmiany w wyglądzie głownej strony aplikacji" />
     <MESSAGE value="Planowanie głównej strony oraz stronki ze statystykami" />
     <MESSAGE value="- Stworzenie logowania do aplikacji&#10;- Dodanie klasy reprezentującą urzytkownika&#10;- Praca nad widokiem strony yours_expanses" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Stworzenie logowania do aplikacji&#10;- Dodanie klasy reprezentującą urzytkownika&#10;- Praca nad widokiem strony yours_expanses" />
+    <MESSAGE value="- Obsługa rejestracji&#10;- walidacja danych" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Obsługa rejestracji&#10;- walidacja danych" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1079" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607016975378">
@@ -152,6 +153,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="236" key="#com.intellij.ide.util.MemberChooser/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607006159583" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1609859136670">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609859136670" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1609859180980">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609859180980" />
+    <state x="598" y="281" key="MultipleFileMergeDialog" timestamp="1609859180991">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="598" y="281" key="MultipleFileMergeDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609859180991" />
     <state x="739" y="243" key="NewPhpClassDialog" timestamp="1607021458891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -160,14 +173,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1276" y="447" key="NewPhpFileDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607020406058" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607024434302">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609859144747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1607024434302" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609859144747" />
     <state x="1107" y="221" width="493" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1609791252651">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1107" y="221" width="493" height="664" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609791252651" />
+    <state x="534" y="138" width="1591" height="1027" key="dock-window-1" timestamp="1609864392946">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="534" y="138" width="1591" height="1027" key="dock-window-1/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1609864392946" />
     <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1606232175091">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

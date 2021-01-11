@@ -130,8 +130,9 @@ li:last-child {
 main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 85vw;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
 }
 
 header {
@@ -139,6 +140,8 @@ header {
     justify-content: flex-end;
     padding: 0.5em 1em;
     border-bottom: 1px solid gray;
+    height: 5%;
+    margin: 0;
 }
 
 .profile {
@@ -158,18 +161,20 @@ header {
 
 
 section {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
-    padding: 2em;
-    overflow: auto;
+    display: flex;
+    justify-content: flex-start;
+    justify-items: center;
+    padding: 0.5em;
+    height: 95%;
+    margin: 0;
+
 }
 .total_money{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    font-size: 20px;
+    font-size: 1em;
 }
 .total_money >p {
     display: flex;
@@ -180,11 +185,208 @@ section {
 
 }
 .money{
-    font-size:20px;
+    font-size:2em;
     margin: 0;
     justify-items: center;
     align-items: center;
     padding: 0.2em;
-
     color: green;
+}
+
+.transaction{
+
+    width: 50%;
+    height: 100%;
+    vertical-align: middle;
+    margin: 0.5em;
+}
+.transaction>p{
+    font-size: 200%;
+    padding: 0.2em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.element_list{
+    height: 5em;
+    width: 60%;
+    border: 3px solid black;
+    border-radius: 2em;
+    margin: 0.5em auto;
+
+}
+
+.cp_option{
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 100%;
+
+}
+.d_option{
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 100%;
+}
+.addExpense{
+
+    width: 50%;
+    height: 100%;
+
+    margin: 0.5em;
+}
+.addExpense>p{
+    font-size: 200%;
+    padding: 0.2em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.list{
+    height: 85%;
+    padding: 0.5em;
+}
+.summary{
+    height: 5%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+.summary>p{
+    margin: 0.2em;
+    font-size: 120%;
+
+}
+.price{
+    height: 15%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price>input{
+    height: 15%;
+    width: 30%;
+    margin: 1em;
+    border: 3px solid black ;
+    border-radius: 1em;
+    font-size: 120%;
+
+}
+.price>p{
+    font-size: 150%;
+    margin: 1em;
+
+}
+.category{
+    height: 15%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.category>select{
+    height: 40%;
+    width: 30%;
+    margin: 1em;
+    font-size: 120%;
+    border: 3px solid black ;
+    border-radius: 1em;
+
+}
+.category>p{
+    font-size: 150%;
+    margin: 1em;
+}
+
+.data{
+    height: 15%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.data>p{
+    font-size: 150%;
+    margin: 1em;
+}
+.data>input{
+    height: 15%;
+    width: 30%;
+    margin: 1em;
+    border: 3px solid black ;
+    border-radius: 1em;
+    font-size: 120%;
+
+}
+
+#add_item{
+    height: 7%;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#add_item>button{
+    width: 20%;
+    height: 100%;
+    font-size: 90%;
+    padding: 0;
+
+}
+
+.addMoney{
+    height: 35%;
+    padding: 0.5em;
+    vertical-align: middle;
+
+
+
+}
+.aMoney{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+.aMoney>p{
+    font-size: 150%;
+    margin: 1em;
+}
+
+#add_money{
+    font-size: 150%;
+    width: 100%;
+
+
+}
+.aMoney>input{
+    height: 15%;
+    width: 30%;
+    margin: 1em;
+    border: 3px solid black ;
+    border-radius: 1em;
+    font-size: 120%;
+}
+.addMoney>div>button{
+    width: 20%;
+    font-size: 100%;
+    padding: 0;
+}
+.addMoney>div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

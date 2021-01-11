@@ -42,14 +42,59 @@
                 <div class="transaction">
                     <p>Transaction</p>
                     <div class="list">
-                        <p>katregoria</p>
-                        <p>cena</p>
-                        <p>uwagi:</p>
+                        <div class="element_list">
+                            <div class="cp_option">
+                                <p>category</p>
+                                <p>price</p>
+                            </div>
+                            <div class="d_option">
+                                <p>data</p>
+                            </div>
+                        </div>
+
 
                     </div>
                     <div class="summary">
                         <p>Summary:</p>
                         <p> -302 zł</p>
+                    </div>
+                </div>
+                <div class="addExpense">
+                    <p>Add expense</p>
+                    <div class="price">
+                        <p>Price:</p>
+                        <input class="priceArea"></input>
+                    </div>
+                    <div class="category">
+                        <p>Category:</p>
+                        <select class="cmbCategory">
+                            <option value="0">Select Category</option>
+                            <option value="1">---ANY---</option>
+                            <option value="2">Food</option>
+                            <option value="3">Car</option>
+                        </select>
+                    </div>
+                    <div class="data">
+                        <p>Data:</p>
+                        <input class="dataArea"></input>
+                    </div>
+                    <div id="add_item">
+                        <button>Add</button>
+                    </div>
+
+                    <div class="addMoney">
+                        <div id="add_money">
+                            <p >Add money to your account</p>
+                        </div>
+
+                        <div class="aMoney">
+                            <p>Money:</p>
+                            <input class="addMoneyArea"></input>
+                        </div>
+                        <div>
+                            <button>Add</button>
+                        </div>
+
                     </div>
                 </div>
 
