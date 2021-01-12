@@ -9,10 +9,7 @@ class DefaultController extends AppController {
         $this->render('start_page');
     }
 
-    public function your_expanses()
-    {
-        $this->render('your_expanses');
-    }
+
     public function registration()
     {
         $this->render('registration');

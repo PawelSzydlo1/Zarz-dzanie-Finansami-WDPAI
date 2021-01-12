@@ -39,19 +39,23 @@
             </header>
 
             <section class="projects">
+
                 <div class="transaction">
                     <p>Transaction</p>
                     <div class="list">
+                        <?php foreach($prices as $price): ?>
                         <div class="element_list">
+
                             <div class="cp_option">
-                                <p>category</p>
-                                <p>price</p>
+                                <p><?= $price->getPrice()?></p>
+                                <p><?= $price->getCategory()?></p>
                             </div>
                             <div class="d_option">
-                                <p>data</p>
+                                <p><?= $price->getData()?></p>
                             </div>
-                        </div>
 
+                        </div>
+                        <?php endforeach; ?>
 
                     </div>
                     <div class="summary">
@@ -59,29 +63,36 @@
                         <p> -302 zł</p>
                     </div>
                 </div>
-                <div class="addExpense">
+
+                <form class="addExpense" action="addPrice" method="POST" ENCTYPE="multipart/form-data">
+                    <?php if(isset($messages)){
+                        foreach ($messages as $message){
+                            echo $message;
+                        }
+                    }
+                    ?>
                     <p>Add expense</p>
                     <div class="price" >
                         <p>Price:</p>
                         <input class="priceArea"
-                               value="00.00"></input>
+                               value="00.00" name="price_elements">
                     </div>
                     <div class="category">
                         <p>Category:</p>
-                        <select class="cmbCategory">
+                        <select class="cmbCategory" name="category">
                             <option value="0">Select Category</option>
                             <option value="1">---ANY---</option>
-                            <option value="2">Food</option>
-                            <option value="3">Car</option>
+                            <option value="Food">Food</option>
+                            <option value="Car">Car</option>
                         </select>
                     </div>
                     <div class="data">
                         <p>Data:</p>
-                        <input class="dataArea" type="date" name="trip-start"
-                               value="2021-01-01"></input>
+                        <input class="dataArea" type="date" name="data"
+                               value="2021-01-01">
                     </div>
                     <div id="add_item">
-                        <button>Add</button>
+                        <button type="submit">Add</button>
                     </div>
 
                     <div class="addMoney">
@@ -91,16 +102,16 @@
 
                         <div class="aMoney">
                             <p>Money:</p>
-                            <input class="addMoneyArea"></input>
+                            <input class="addMoneyArea">
                         </div>
                         <div>
-                            <button>Add</button>
+                            <button type="submit">Add</button>
                         </div>
 
                     </div>
-                </div>
+                </form>
 
-                
+
             </section>
         </main>
     </div>
