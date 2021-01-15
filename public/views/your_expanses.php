@@ -30,7 +30,7 @@
             <header>
                 <div class="total_money">
                     <p>Total money:</p>
-                    <p class="money"> 159 zł</p>
+                    <p class="money"> <?= $sum->getSum() - $minus?> zł </p>
                 </div>
 
                 <div class="profile" onclick="location.href='logout'">
@@ -60,7 +60,7 @@
                     </div>
                     <div class="summary">
                         <p>Summary:</p>
-                        <p> -302 zł</p>
+                        <p> -<?= $minus ?> zł</p>
                     </div>
                 </div>
 
@@ -74,27 +74,30 @@
                     <p>Add expense</p>
                     <div class="price" >
                         <p>Price:</p>
-                        <input class="priceArea"
-                               value="00.00" name="price_elements">
+                        <input class="priceArea" name="price_elements" required>
                     </div>
                     <div class="category">
                         <p>Category:</p>
                         <select class="cmbCategory" name="category">
-                            <option value="0">Select Category</option>
-                            <option value="1">---ANY---</option>
+                            <option value="Other"></option>
                             <option value="Food">Food</option>
                             <option value="Car">Car</option>
+                            <option value="Clothes">Clothes</option>
+                            <option value="Foodstuffs">Foodstuffs</option>
+                            <option value="Cosmetics">Cosmetics</option>
+                            <option value="Toys">Toys</option>
                         </select>
                     </div>
                     <div class="data">
                         <p>Data:</p>
-                        <input class="dataArea" type="date" name="data"
-                               value="2021-01-01">
+                        <input class="dataArea" type="date" name="data" value="<?php echo date("Y-m-d") ?>">
                     </div>
                     <div id="add_item">
                         <button type="submit">Add</button>
                     </div>
 
+                </form>
+                <form  action="updateSum" method="POST" ENCTYPE="multipart/form-data">
                     <div class="addMoney">
                         <div id="add_money">
                             <p >Add money to your account</p>
@@ -102,7 +105,7 @@
 
                         <div class="aMoney">
                             <p>Money:</p>
-                            <input class="addMoneyArea">
+                            <input class="addMoneyArea" name="sum_area">
                         </div>
                         <div>
                             <button type="submit">Add</button>
@@ -110,8 +113,6 @@
 
                     </div>
                 </form>
-
-
             </section>
         </main>
     </div>

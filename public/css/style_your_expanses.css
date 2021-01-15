@@ -167,6 +167,7 @@ section {
     padding: 0.5em;
     height: 95%;
     margin: 0;
+    overflow: hidden;
 
 }
 .total_money{
@@ -249,6 +250,7 @@ section {
 .list{
     height: 85%;
     padding: 0.5em;
+    overflow: auto;
 }
 .summary{
     height: 5%;

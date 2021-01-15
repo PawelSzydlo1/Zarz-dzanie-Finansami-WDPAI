@@ -11,6 +11,7 @@ Router::get('logout', 'DefaultController');
 Router::get('your_expanses', 'PriceController');
 
 Router::post('addPrice', 'PriceController');
+Router::post('updateSum', 'SumController');
 Router::post('login', 'SecurityController');
 Router::post('registration', 'SecurityController');
 

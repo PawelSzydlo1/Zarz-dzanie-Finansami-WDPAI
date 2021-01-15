@@ -3,22 +3,27 @@
 require_once 'AppController.php';
 require_once __DIR__ .'/../models/Price.php';
 require_once __DIR__.'/../repository/PriceRepository.php';
-
+require_once __DIR__.'/../repository/SumRepository.php';
 
 class PriceController extends AppController
 {
     private $message = [];
     private $priceRepository;
+    private $sumRepository;
 
     public function __construct()
     {
         parent::__construct();
         $this->priceRepository = new PriceRepository();
+        $this->sumRepository = new SumRepository();
     }
     public function your_expanses()
     {
         $prices = $this->priceRepository->getPrices();
-        $this->render('your_expanses', ['prices' => $prices]);
+        $this->render('your_expanses', ['prices' => $prices,
+            'sum'=>$this->sumRepository->getSum(1),
+            'minus'=>$this->sumRepository->minusMoney()]);
+
     }
     public function addPrice()
     {
