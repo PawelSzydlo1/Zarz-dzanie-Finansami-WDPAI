@@ -27,7 +27,7 @@ class SumController extends AppController
         }
         return $this->render('your_expanses', [
             'messages' => $this->message,
-            'sum'=>$this->sumRepository->getSum(1),
+            'sum'=>$this->sumRepository->getSum($this->sumRepository->getIdUser()),
             'prices'=> $this->priceRepository->getPrices(),
             'minus'=>$this->sumRepository->minusMoney()
             ]);

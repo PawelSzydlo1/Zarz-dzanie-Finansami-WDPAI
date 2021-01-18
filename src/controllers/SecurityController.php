@@ -33,8 +33,7 @@ class SecurityController extends AppController
            return $this->render('login',['messages'=>['Wrong password!']]);
        }
 
-       $name=$user->getName();
-       $_SESSION['user']=htmlspecialchars($name);
+       $_SESSION['user']=serialize($user);
 
         $url = "http://$_SERVER[HTTP_HOST]";
         header("Location: {$url}/your_expanses");
@@ -56,7 +55,6 @@ class SecurityController extends AppController
             return $this->render('registration', ['messages' => ['Please provide proper password']]);
         }
 
-        //TODO try to use better hash function
         $user = new User($email, md5($password), $name, $surname);
 
 

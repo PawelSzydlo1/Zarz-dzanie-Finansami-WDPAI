@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 require_once 'Repository.php';
 require_once __DIR__.'/../models/Price.php';
 
@@ -32,7 +32,7 @@ class PriceRepository extends Repository
         INSERT INTO price (price_elements,category,data, id_assigned_by)
         VALUES(?,?,?,?)
         ');
-        $assignedById=1;
+        $assignedById=$this->getIdUser();
         $stmt->execute([
             $price->getPrice(),
             $price->getCategory(),
@@ -45,8 +45,10 @@ class PriceRepository extends Repository
         $result = [];
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM price;
+            SELECT * FROM price  WHERE id_assigned_by=:id_assigned_by;
         ');
+        $id_assigned_by=$this->getIdUser();
+        $stmt->bindParam(':id_assigned_by', $id_assigned_by, PDO::PARAM_INT);
         $stmt->execute();
         $prices = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
@@ -60,4 +62,16 @@ class PriceRepository extends Repository
 
         return $result;
     }
+    public function getIdUser(){
+        $stmt = $this->database->connect()->prepare('
+            SELECT id as id_user FROM users WHERE email=:email
+        ');
+        $email=unserialize($_SESSION['user'])->getEmail();
+
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->execute();
+        $id=$stmt->fetch(PDO::FETCH_ASSOC);
+        return $id['id_user'];
+    }
+
 }

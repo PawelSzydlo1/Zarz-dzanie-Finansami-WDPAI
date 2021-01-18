@@ -18,7 +18,7 @@
                 </li>
                 <li>
                     <i class="fas fa-chart-line"></i>
-                    <a href="#" class="button">Statistic</a>
+                    <a href="statistic" class="button">Statistic</a>
                 </li>
                 <li>
                     <i class="fas fa-id-badge"></i>

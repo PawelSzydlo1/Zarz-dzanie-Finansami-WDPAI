@@ -13,6 +13,7 @@ class User
         string $password,
         string $name,
         string $surname
+
     ) {
         $this->email = $email;
         $this->password = $password;
@@ -49,5 +50,7 @@ class User
     {
         $this->surname = $surname;
     }
+
+
 
 }
