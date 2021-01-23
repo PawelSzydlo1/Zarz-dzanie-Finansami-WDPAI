@@ -36,6 +36,7 @@ class PriceController extends AppController
             'sum'=>$this->sumRepository->getSum($this->sumRepository->getIdUser()),
             'minus'=>$this->sumRepository->minusMoney()]);
 
+
     }
     public function addPrice()
     {

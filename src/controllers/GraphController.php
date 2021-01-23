@@ -8,12 +8,15 @@ class GraphController extends AppController
     public function __construct()
     {
         parent::__construct();
-        $this->graphRepository = New GraphController();
+        $this->graphRepository = new GraphRepository();
     }
 
 
-    public function getDate(){
-        $this->graphRepository->getDate();
+    public function getDate()
+    {
+
+        echo json_encode($this->graphRepository->getDate());
     }
+
 
 }

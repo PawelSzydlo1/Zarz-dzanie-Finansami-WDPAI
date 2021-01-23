@@ -11,9 +11,9 @@ Router::get('contact', 'DefaultController');
 Router::get('logout', 'DefaultController');
 Router::get('your_expanses', 'PriceController');
 Router::get('statistic', 'PriceController');
-Router::get('getDate', 'GraphController');
 
 
+Router::post('getDate', 'GraphController');
 Router::post('addPrice', 'PriceController');
 Router::post('updateSum', 'SumController');
 Router::post('login', 'SecurityController');

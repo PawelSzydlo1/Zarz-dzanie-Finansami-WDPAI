@@ -1,11 +1,11 @@
 <?php
 session_start();
 require_once 'Repository.php';
-require_once __DIR__.'/../repository/SumRepository.php';
+
 class GraphRepository extends Repository
 {
     public function getDate(){
-        $table=[];
+
         $stmt = $this->database->connect()->prepare('
             SELECT price_elements FROM price WHERE id_assigned_by =:id_assigned_by
         ');
@@ -13,13 +13,8 @@ class GraphRepository extends Repository
         $id_assigned_by=$this->getIdUser();
         $stmt->bindParam(':id_assigned_by', $id_assigned_by, PDO::PARAM_INT);
         $stmt->execute();
-        $id=$stmt->fetchAll(PDO::FETCH_ASSOC);
-        foreach ($id as $t){
-            $table[]=$t;
-        }
-        var_dump($table);
-        exit();
-        return $table;
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 
     }
 

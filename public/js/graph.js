@@ -1,3 +1,19 @@
+const date = [];
+
+fetch("/getDate",{
+    method: "POST"
+
+
+    }).then(function (response) {
+        return response.json();
+    }).then(function (table) {
+
+    table.forEach(tab=>{
+        date.push(tab['price_elements']) ;
+        console.log(date);
+    })
+});
+
 let data = {
     labels: ["January", "February", "March", "April"],
     datasets: [
@@ -20,7 +36,7 @@ let data = {
             pointHoverBorderWidth: 3,
             pointHoverBackgroundColor : 'rgba(255,255,255,1)',
             pointHoverBorderColor : 'rgba(236,115,87, 1)',
-            data: [50, 30, 40, 30, 32, 25, 30],
+            data: date
         },
         {
             label: "My Second dataset",
@@ -43,17 +59,10 @@ let data = {
 let options = {
 };
 
-let ctx = document.getElementById("myChart").getContext("2d");;
+let ctx = document.getElementById("myChart").getContext("2d");
 let myLineChart = new Chart(ctx, {
     type: 'line',
     data: data,
     options: options
 });
-fetch(`/getDate`)
-    .then(response => {
-        console.log(response.headers.get('price_elements')); //application/json; charset=utf-8
 
-        for (let [key, value] of response.headers) {
-            console.log(`${key} = ${value}`);
-        }
-    });
