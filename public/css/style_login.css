@@ -60,26 +60,30 @@ input {
 
 }
 
+
 @media only screen and (max-device-width: 420px) {
-    .container {
-        flex-direction: column;
+
+
+.container{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+    .logo{
+        width: 90%;
     }
-    * {
-        font-size: 36px;
+    .logo>img{
+        width: 90%;
     }
-    .login-container,
-    .logo {
-        width: 100%;
+    .login-container{
+        width: 50%;
     }
-    form {
-        margin: auto;
+    input{
+        width: 80%;
     }
-    img {
-        height: 7em;
-        margin: 2em;
+    form.login{
+        height: 20vh;
     }
 }
-
 
 
 

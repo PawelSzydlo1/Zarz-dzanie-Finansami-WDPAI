@@ -35,25 +35,7 @@ input {
     width: 60%;
 
 }
-@media only screen and (max-device-width: 420px) {
-    .container {
-        flex-direction: column;
-    }
-    * {
-        font-size: 36px;
-    }
-    .login-container,
-    .logo {
-        width: 100%;
-    }
-    form {
-        margin: auto;
-    }
-    img {
-        height: 7em;
-        margin: 2em;
-    }
-}
+
 
 .base-container {
     display: flex;
@@ -137,7 +119,8 @@ header {
     display: flex;
     justify-content: flex-end;
     padding: 1em 2em;
-    border-bottom: 1px solid gray
+    border-bottom: 1px solid gray;
+    align-items: center;
 }
 
 
@@ -246,4 +229,42 @@ p{
 
 .profile>i {
     padding: 1em 1em;
+}
+
+
+@media only screen and (max-device-width: 450px) {
+
+    .transaction{
+        height: 60%;
+        width: 90%;
+    }
+    .graph_area{
+        height: 30%;
+        width: 90%;
+    }
+
+    .profile{
+        display: flex;
+        align-items: center;
+        height: 50%;
+        width: 20%;
+        font-size: 80%;
+    }
+    ul{
+        font-size: 90%;
+    }
+
+    .card_me{
+        width: 80%;
+        flex-direction: column;
+
+    }
+    .card_me>img {
+        height: 50%;
+        width: 30%;
+
+    }
+    .text_contact{
+        width: 80%;
+    }
 }

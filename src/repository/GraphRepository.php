@@ -7,7 +7,7 @@ class GraphRepository extends Repository
     public function getDate(){
 
         $stmt = $this->database->connect()->prepare('
-            SELECT price_elements FROM price WHERE id_assigned_by =:id_assigned_by
+            SELECT SUM(price_elements)as price_elements, "data" FROM price WHERE id_assigned_by =:id_assigned_by GROUP BY "data"
         ');
 
         $id_assigned_by=$this->getIdUser();

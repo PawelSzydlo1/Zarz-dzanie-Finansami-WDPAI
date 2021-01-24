@@ -1,68 +1,62 @@
-const date = [];
 
-fetch("/getDate",{
+
+fetch("/getDate", {
     method: "POST"
 
 
-    }).then(function (response) {
-        return response.json();
-    }).then(function (table) {
-
-    table.forEach(tab=>{
-        date.push(tab['price_elements']) ;
-        console.log(date);
+}).then(function (response) {
+    return response.json();
+}).then(function (table) {
+    const myDataArray = [];
+    const myDataArray1 = [];
+    const myDataArray2 = [];
+    table.forEach(tab => {
+        myDataArray1.push(tab['price_elements']);
+        myDataArray2.push(tab['data']);
+        console.log(myDataArray2);
     })
+    myDataArray.push(myDataArray1);
+    myDataArray.push(myDataArray2);
+    return myDataArray;
+}).then(function(myDataArray,){
+    let myData=prepareData(myDataArray[0],myDataArray[1]);
+    drawChart(myData);
 });
 
-let data = {
-    labels: ["January", "February", "March", "April"],
-    datasets: [
-        {
-            label: "My First dataset",
-            //linia
-            //borderDash: [3, 3], //jezeli ustawione to przerywana linia
-            borderColor : 'rgba(236,115,87, 0.7)',
-            pointBorderColor : 'rgba(236,115,87, 0.7)',
-            borderWidth : 2,
-            //kolor tla i legendy
-            fill: true, //czy wypelnic zbior
-            backgroundColor : 'rgba(236,115,87, 0.1)', //wplywa tez na kolor w legendzie
-            //ustawienia punktu
-            pointRadius : 4,
-            pointBorderWidth : 1,
-            pointBackgroundColor : 'rgba(255,255,255,1)',
-            //ustawienia punktu hover
-            pointHoverRadius: 4,
-            pointHoverBorderWidth: 3,
-            pointHoverBackgroundColor : 'rgba(255,255,255,1)',
-            pointHoverBorderColor : 'rgba(236,115,87, 1)',
-            data: date
-        },
-        {
-            label: "My Second dataset",
-            borderColor : 'rgba(75,192,192, 0.7)',
 
-                data: [65, 59, 80, 81, 56, 55, 40],
-},
-{
-    label: "My Third dataset",
-        borderColor : 'rgba(132,177,237, 0.7)',
+function prepareData(arrayDataSet1,arrayDataSet2) {
+
+    let myData = {
+        labels: arrayDataSet2,
+        datasets: [
+            {
+                
+                label: "My expenses",
+                borderColor: 'rgba(236,115,87)',
+                fill: false,
+                pointRadius: 4,
+                pointBorderWidth: 1,
+               pointBackgroundColor: 'rgba(236,115,87)',
 
 
-       data: [30, 20, 60, 50, 42, 15, 40],
+                data: arrayDataSet1
+            },
+
+
+        ]
+    };
+    return myData;
 }
 
-]
-};
+function drawChart(data) {
+    let options = {};
 
+    let ctx = document.getElementById("myChart").getContext("2d");
+    let myLineChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
 
-let options = {
-};
-
-let ctx = document.getElementById("myChart").getContext("2d");
-let myLineChart = new Chart(ctx, {
-    type: 'line',
-    data: data,
-    options: options
-});
+}
 

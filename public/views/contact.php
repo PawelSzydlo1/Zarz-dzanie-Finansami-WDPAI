@@ -29,8 +29,8 @@
     <main>
         <header>
 
-            <div class="profile">
-                <i class="fas fa-user-edit"></i> Profile
+            <div class="profile" onclick="location.href='logout'">
+                <i class="fas fa-sign-out-alt"></i> Log out
             </div>
 
         </header>

@@ -19,6 +19,7 @@ header {
     align-items: center;
     border-bottom: 1px solid gray;
 
+
     margin: 0;
 }
 .main{
@@ -100,4 +101,39 @@ p{
     text-align: center;
 
 
+}
+
+@media only screen and (max-device-width: 420px) {
+
+
+    .profile{
+        display: flex;
+        align-items: center;
+        height: 50%;
+    }
+    ul{
+        font-size: 90%;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .title{
+        font-size: 200%;
+        width: 40%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .buttons{
+        width: 45%;
+    }
+    .button{
+       font-size: 100%;
+    }
+    .text_des{
+        width: 80%;
+    }
+    .kasa_img{
+        width: 80%;
+    }
 }

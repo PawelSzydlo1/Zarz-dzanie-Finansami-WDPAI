@@ -69,7 +69,7 @@
                 <div class="graph_area">
                     <p>Last month</p>
                     <div class="graph">
-                        <canvas id="myChart" width="30" height="30"></canvas>
+                        <canvas id="myChart" width="20" height="10"></canvas>
                     </div>
 
                 </div>

@@ -97,7 +97,7 @@
                     </div>
 
                 </form>
-                <form  action="updateSum" method="POST" ENCTYPE="multipart/form-data">
+                <form class="uSum" action="updateSum" method="POST" ENCTYPE="multipart/form-data">
                     <div class="addMoney">
                         <div id="add_money">
                             <p >Add money to your account</p>
